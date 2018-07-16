@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.6rem;
+}
+
+a,
+a:visited {
+  color: #13615d;
+}
+
+.clear {
+  clear: both;
+}
+
+td {
+  border-top: solid 2px #d3d3d3;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+/* Documentation site component styles */
+.example {
+  border: solid 2px #d3d3d3;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  background-color: #f4f6f9;
+  margin-top: 2rem;
+}
+
+.example h4:first-of-type {
+  margin-top: 0;
+  padding-bottom: 2rem;
+}
+
+.example p:last-of-type {
+  margin-bottom: 0;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.props tr td:last-of-type {
+  text-align: center;
+}
+
+.props th,
+td {
+  text-align: left;
+  padding: 5px;
+}
+
+.nav {
+  float: left;
+  width: 250px;
+  list-style-type: none;
+  padding: 3rem;
+  padding-top: 3rem;
+}
+.nav li {
+  padding-top: 1rem;
+}
+.componentpage {
+  padding-top: 3rem;
+  margin-left: 27rem;
+}
+.componentpage h2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.componentpage h3 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
