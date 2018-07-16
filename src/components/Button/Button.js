@@ -3,17 +3,14 @@ import styled, { keyframes } from "styled-components";
 import PropTypes from "prop-types";
 
 class Button extends Component {
-  constructor(props) {
-    super(props);
-  }
   formatUppercase = str => {
     return str.toUpperCase();
   };
   render() {
     const { message } = this.props;
     const moveInBottom = keyframes`
-      0% { opacity: 1;}
-      100% { opacity: .5;}
+      0% { opacity: .4; transform: translateY(50px)}
+      100% { opacity: 1; transform: translateY(0)}
       }
     `;
     const Button = styled.button`
@@ -23,9 +20,10 @@ class Button extends Component {
       color: white;
       border-radius: 5px;
       padding: 1.5rem 4.5rem;
+      animation: ${moveInBottom} 0.7s;
       &:hover {
         cursor: pointer;
-        animation: ${moveInBottom} 0.4s;
+        opacity: 0.9;
       }
     `;
     Button.displayName = "Button";

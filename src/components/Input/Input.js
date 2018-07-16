@@ -5,9 +5,6 @@ import PropTypes from "prop-types";
 /** This is a custom input with Props */
 
 class Input extends Component {
-  constructor(props) {
-    super(props);
-  }
   borderChooser(error) {
     if (error) {
       return "#f45c42";
