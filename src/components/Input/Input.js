@@ -28,6 +28,7 @@ class Input extends Component {
     const CustomInput = styled.input`
       height: 4rem;
       font-size: 2rem;
+      padding: 1rem;
       width: ${() =>
         this.props.width < 500 ? this.props.width + "px" : "500px"};
       border-radius: 5px;
@@ -43,6 +44,7 @@ class Input extends Component {
     const SmallInput = styled.input`
     height: 3rem;
     font-size: 1.5rem;
+    padding: 1rem;
     width: ${() =>
       this.props.width < 500 ? this.props.width + "px" : "500px"};
     border-radius: 5px;
@@ -52,6 +54,7 @@ class Input extends Component {
       outline: none !important;
       border: 2px solid rgba(89, 131, 198, 0.5);
       box-shadow: 0 0 0.5rem;
+      
     }
     
   `;
